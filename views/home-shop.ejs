@@ -7,7 +7,7 @@
     <title>GForce Velocity</title>
     <link rel="icon" type="text/css" href="/images/red-car-vehicle-auto-detailing-logo-png.png">
     <!-- Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- Font Awesome -->
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200&family=IBM+Plex+Sans:ital,wght@1,200&family=M+PLUS+1+Code:wght@300&family=Roboto:wght@300&family=Rubik:wght@500&family=Shippori+Antique&display=swap"
@@ -15,36 +15,15 @@
         <script src="https://kit.fontawesome.com/64cf8f81a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <!-- <div class="logo"><img src="/images/ red-car-vehicle-auto-detailing-logo-png" alt=""></div> -->
-                <a href="/" class="link-logo">
-                    <div class="logo">
-                        <img class="logo-image" src="/images/red-car-vehicle-auto-detailing-logo-png.png">
-                    </div>
-                </a>
-                <div class="barra-navegacion"><input type="text" name="buscador" id="buscador"><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></div>
-                <li class="icono-menu-mobile"><i class="fa-solid fa-bars"></i></li>
-            </ul>
-        </nav>
-        <!-- <nav class="sub-nav">
-            <ul>
-                <li>Ofertas</li>
-                <li>Categorías</li>
-                <li>Nuevos</li>
-                <li>Usados</li>
-                <li class="foto-usuario"><i class="fa-solid fa-circle-user"></i></li>
-            </ul>
-        </nav> -->
-
-    </header>
+    <%- include('./partials/nav') %>
     <main>
         <section></section>
         <section></section>
         <section></section>
     </main>
-    <footer></footer>
+    <%- include('./partials/footer') %>
+
+
     <script src="/js/index.js"></script>
 </body>
 </html>

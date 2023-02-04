@@ -1,0 +1,15 @@
+   /* Colores
+      #252525
+      #c63637
+      #eaebe7
+   */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #eaebe7;
+}
+
+body {
+    background-color: #252525;
+}
