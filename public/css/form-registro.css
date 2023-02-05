@@ -9,3 +9,93 @@
                 background-position: center 25%; 
                 background-size: cover;
 } */
+
+body {
+    display: flex;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: auto;
+    background-color: #fff;
+    width: 70%;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #333;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.form h2 {
+    font-size: 2rem;
+    margin-bottom: .5em;
+    margin-top: 10px;
+}
+
+.form p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form p a {
+    font-weight: bold;
+    color: #000;
+}
+
+.form-container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em
+}
+
+.form-group {
+    position: relative;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    outline: none;
+}
+
+.form-input:focus {
+    border-bottom: 2px solid #c63637;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #c63637;
+}
+
+.form-label {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.submit {
+    background-color: #c63637;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5em;
+    padding: 10px;
+}
+
+@media (min-width: 450px) {
+    .form p {
+        font-size: 16px;
+    }
+}

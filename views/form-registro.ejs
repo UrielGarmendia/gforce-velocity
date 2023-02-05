@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/form-registro.css">
 </head>
 <body>
+    <!-- <form>
         <label for="">Nombre de usuario</label>
             <input type="text" name="" id="">        
         <label for="">Gmail</label>
@@ -14,6 +15,32 @@
             <input type="password" name="" id="">       
         <label for="">Confirmar contraseña</label>
             <input type="password" name="" id="">      
+    </form> -->
+
+    <form class="form">
+        <h2>Registrarse</h2>
+        <p>¿Ya tienes una cuenta?<a href="#"> Entra aquí</a></p>
+
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" id="name" class="form-input" placeholder=" ">
+                <label for="name" class="form-label">Nombre </label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="mail" class="form-input" placeholder=" ">
+                <label for="mail" class="form-label">Correo</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" class="form-input" placeholder=" ">
+                <label for="password" class="form-label">Contraseña</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password-confirmed" class="form-input" placeholder=" ">
+                <label for="password-confirmed" class="form-label">Confirmar contraseña</label>
+            </div>
+
+            <input type="submit" class="submit" value="Enviar">
+        </div>
     </form>
     
 </body>
