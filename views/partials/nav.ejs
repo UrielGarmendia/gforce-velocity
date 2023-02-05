@@ -1,6 +1,11 @@
 <link rel="stylesheet" href="/css/cssPartials/nav.css">
+<!-- Font Awesome -->
+<link
+href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200&family=IBM+Plex+Sans:ital,wght@1,200&family=M+PLUS+1+Code:wght@300&family=Roboto:wght@300&family=Rubik:wght@500&family=Shippori+Antique&display=swap"
+rel="stylesheet">
+<script src="https://kit.fontawesome.com/64cf8f81a0.js" crossorigin="anonymous"></script>
 <header>
-    <nav>
+    <nav class="nav-padre">
         <ul>
 
             <a href="/" class="link-logo">
@@ -15,12 +20,12 @@
             </div>
             <button class="icono-menu-mobile"><i class="fa-solid fa-bars"></i>
             <ul class="menu-mobile oculto" id="mobile-menu">
-            <a href=""><li class="navigaton">Ofertas</li></a>
-            <a href=""><li class="navigaton">Categorías</li></a>
-            <a href=""><li class="navigaton">Nuevos</li></a>
-            <a href=""><li class="navigaton">Usados</li></a>
-            <a href=""><li class="navigaton"><i class="fa-solid fa-cart-shopping"></i></li></a>
-            <a href="" class="foto-usuario"><li class="navigaton"><i class="fa-solid fa-circle-user"></i></li></a>
+            <a href="/categorias"><li class="navigaton">Ofertas</li></a>
+            <a href="/categorias"><li class="navigaton">Categorías</li></a>
+            <a href="/categorias"><li class="navigaton">Nuevos</li></a>
+            <a href="/categorias"><li class="navigaton">Usados</li></a>
+            <a href="/carrito"><li class="navigaton"><i class="fa-solid fa-cart-shopping"></i></li></a>
+            <a href="/form-login" class="foto-usuario"><li class="navigaton"><i class="fa-solid fa-circle-user"></i></li></a>
             </ul>
             </button>
         </ul>
@@ -29,18 +34,19 @@
     <nav class="sub-nav">
         <ul>
             <div class="div-categorias">
-                <a href=""><li class="">Ofertas</li></a>
-                <a href=""><li class="">Categorías</li></a>
-                <a href=""><li class="">Nuevos</li></a>
-                <a href=""><li class="">Usados</li></a>
+                <a href="/categorias"><li class="">Ofertas</li></a>
+                <a href="/categorias"><li class="">Categorías</li></a>
+                <a href="/categorias"><li class="">Nuevos</li></a>
+                <a href="/categorias"><li class="">Usados</li></a>
             </div>
 
             <ul class="ul-register">
-                <a href=""><li class="">Registrarse</li></a>
-                <a href=""><li class="">Login</li></a>
+                <a href="/form-registro"><li class="">Registrarse</li></a>
+                <a href="/form-login"><li class="">Login</li></a>
             </ul>
         </ul>
 
        
     </nav>
 </header>
+<script src="/js/nav.js"></script>
