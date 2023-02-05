@@ -30,10 +30,17 @@ nav ul{
  border-bottom: 2px solid #c63637;
 }
 
+.invisible {
+    display: none;
+}
+
 .barra-navegacion input {
     color: #252525;
     height: 100%;
-    max-width: 140px;
+    width: 140px;
+    border: none;
+    outline: none;
+    padding: 5px;
 }
 
 .icono-menu-mobile i {
@@ -68,7 +75,7 @@ nav ul{
 .menu-mobile {
     flex-direction: column;
     position: absolute;
-    top: 84.5px;
+    top: 84px;
     right: 0;
     background-color: #181818;
     border: 2px solid #c63637;
@@ -89,8 +96,88 @@ nav ul{
     background-color: #c63637;
 } 
 
+.sub-nav {
+    display: none;
+}
 
+.nav-iconos {
+    display: none;
+}
 
 .oculto {
     display: none;
+}
+
+@media (min-width: 450px) {
+    .barra-navegacion input {
+        width: 250px;
+    }
+}
+
+@media (min-width: 760px) {
+    .barra-navegacion input {
+        width: 400px;
+    }
+
+    .icono-menu-mobile {
+        display: none;
+    }
+
+    .invisible {
+        display: block;
+    }
+
+    .sub-nav {
+        display: block;
+        height: 35px;
+        background-color: #c63637;
+    }
+
+    .sub-nav ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #c63637;
+        justify-content: space-between;
+    }
+
+    .div-categorias {
+        display: flex;
+        align-items: center;
+        background-color: #c63637;
+        justify-content: center;
+        
+    }
+
+    .div-categorias a {
+        margin: 0 20px;
+    }
+
+    .ul-register a {
+        margin: 0 5px;
+    }
+
+    .sub-nav ul a {
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 10%;
+        transition: all 0.2s ease-out;
+    }
+
+    .sub-nav ul a:hover {
+        background-color: #921c1c;
+    }
+
+    .nav-iconos {
+        display: flex;
+    }
+
+    .nav-iconos a {
+        margin: 0 10px;
+        font-size: 25px;
+    }
+
+    .nav-iconos a i:hover {
+        color: #c63637;
+    }
 }
