@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-image: url("https://media0.giphy.com/media/3oKIPxgr4hwY0fzG24/giphy.gif?cid=ecf05e470vz1bf1u3izu05b0f3wcxx2y85x360jy76tqceri&rid=giphy.gif&ct=g"); 
-                background-position: center 25%; 
-                background-size: cover;
-} */
-
 body {
     display: flex;
+    background: 
+      radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#252525 54% 57%,#0000 59%) 0 calc(160px/2),
+      radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#252525 54% 57%,#0000 59%) calc(160px/2) 0,
+      radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#252525 54% 57%,#0000 59%),
+      radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#252525 54% 57%,#0000 59%),
+      #c63637;
+background-size: calc(160px/4.667) 160px,160px calc(160px/4.667);
 }
 
 form {
@@ -26,7 +27,7 @@ form {
     border-radius: 10px;
     box-shadow: 0 5px 5px #333;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .form h2 {

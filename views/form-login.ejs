@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <%- include('./partials/head') %>
-    <title>Formulario de login</title>
+    <title>Formulario de Login</title>
+    <link rel="stylesheet" href="/css/form-registro.css">
 </head>
 <body>
-    <%- include('./partials/footer') %>
+    <form class="form">
+        <h2>Inicicar sesión</h2>
+        <p>¿todavía no tienes una cuenta?<a href="/form-registro"> Entra aquí</a></p>
+
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" id="mail" class="form-input" placeholder=" ">
+                <label for="mail" class="form-label">Correo</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" class="form-input" placeholder=" ">
+                <label for="password" class="form-label">Contraseña</label>
+            </div>
+
+            <input type="submit" class="submit" value="Enviar">
+        </div>
+    </form>
+    
 </body>
 </html>
